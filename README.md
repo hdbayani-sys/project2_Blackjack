@@ -39,17 +39,17 @@ This part will provide the details and visual representation of how the Program 
 ### 1. Card
   The Card class represents a single card with the following attributes:
   
-    1. Suit - Spade, Club, Heart, or Diamond,
-    
+    1. Suit - Spade, Club, Heart, or Diamond, 
     2. Rank - Ranging to an Ace, number cards 2-10, Jacks, Queens, and Kings,
-    
     3. Value - Numerical values from 1-11
     
 ### 2. Deck
   The Deck class represents the standard 52-deck of card objects that have the attributes from the Card class. It has the following attributes:
+    
     1. cards - An empty list which is later filled by all possible playing cards using a loop.
   
   Furthermore, it has the following methods:
+    
     1. shuffle() - Shuffles the Cards list through a "random" function random.shuffle().
     2. deal() - Removes the first-most card on the Cards list.
 
