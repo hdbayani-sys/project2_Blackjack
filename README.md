@@ -31,4 +31,21 @@ The next classes I worked on were the player and dealer. When working on player,
 
   As I have said before, I had a much easier time in debugging because like I said previously, I'm aware of almost every test case scenario in blackjack, so I was able to setup failsafes early on. But that didn't mean I did minimal debugging. One of my first bugs was that the player was betting it's entire balance since I coded the amount it bets to be equal to its balance and not the number it inputted as its bet. Took me about 5 minutes to notice that. Other errors I encountered where syntax errors at class Hand() because I wrote Rank and Card as _Rank and _Card respectivelyand getting NoneType when I print the dialogue ("Dealer dealt the {dealt._Rank} of {dealt._Suit}"), which I fixed by transferring the return after the loop at play_turn() and added a condition if it returns a none type, which also solved the dealer sometimes dealing only once even if it's current total is still less than 17. The weirdest error I got was when I type 1 to hit, move variable doesn't register it as 1 when I turn it into the variable no matter what I do. I don't know why but I just removed the int() ultimately since to be fair, I'm just seeing if the user entered "1" or "2",  not the numerical value 1 and 2 have.
 
-### 👀Visual Representation of the Program👀
+# 👀Visual Representation of the Program👀
+This part will provide the details and visual representation of how the Program works so that everyone may be able to understand both the "main show" and the "behind the scenes" of the software project.
+
+## 🗃The Classes🗃
+
+### 1. Card
+
+### 2. Deck
+
+### 3. Hand
+
+### 4. Player
+
+### 5. Dealer
+
+### 6. BlackjackGame
+
+## 🌊The Flow🎞
