@@ -3,10 +3,20 @@ Blackjack is my second software project to be submitted for EEE 111 under my ins
 
 ## 🕹Features🃏
 **Blackjack** includes the following game features:
-- Multiple players competing against a dealer locally
+- Multiple players competing against a dealer locally.
 - Betting system where players are initially given a balance which they can use to place bets each round.
 - Eliminates broke players (Or if somehow, be in debt.).
+- Great replayability as the game can handle an almost infinite amount rounds.
 - A dealer controlled by a computer that follows standard blackjack rules.
 - User friendly outputs that allow the player to see each output at their own pace as well as seeing who's turn it is, their current score, and their new balance when resolving rounds.
-- Randomized dialogue during betting, dealing, and in between rounds
+- Randomized dialogue during betting, dealing, and in between rounds.
 - Option for players to continue playing or to cash out early. Game ends if all players are eliminated by having insufficient balance or voluntarily quitting
+
+## 🛠Process⚒
+### ♣️Setting Up the Pre-requisite Classes♣️
+
+### ♠️Setting Up the Main Controller Class♠️
+
+### ♥️Setting up the Entry Point♥️
+
+### ♦️Problems Encountered Along the Way and Debugging Process♦️
