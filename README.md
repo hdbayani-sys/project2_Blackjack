@@ -1,5 +1,5 @@
 # ♣️♥️Blackjack Overview♦️♠️
-Blackjack is my second software project to be submitted for EEE 111 under my instructor, Sr. Philip Tuason. This project contains an interactive and digital recreation of Blackjack, with the standard Blackjack game rules and procedures, accompanied with other features to make this recreation a standout to other digital Blackjack recreations. This was built using Visual Studio Code with Python ver 3.13 as the programming language.
+Blackjack is my second software project to be submitted for EEE 111 under my instructor, Sr. Philip Tuason. This project contains an interactive and digital recreation of Blackjack, with the standard Blackjack game rules and procedures, accompanied with other features to bring some charm to the game. This was built using Visual Studio Code with Python ver 3.13 as the programming language.
 
 ## 🕹Features🃏
 **Blackjack** includes the following game features:
@@ -37,10 +37,21 @@ This part will provide the details and visual representation of how the Program 
 ## 🗃The Classes🗃
 
 ### 1. Card
-
+  The Card class represents a single card with the following attributes:  
+    1. Suit - Spade, Club, Heart, or Diamond, 
+    2. Rank - Ranging to an Ace, number cards 2-10, Jacks, Queens, and Kings, 
+    3. Value - Numerical values from 1-11
+    
 ### 2. Deck
+  The Deck class represents the standard 52-deck of card objects that have the attributes from the Card class. It has the following attributes:
+    1. cards - An empty list which is later filled by all possible playing cards using a loop.
+  
+  Furthermore, it has the following methods:
+    1. shuffle() - Shuffles the Cards list through a "random" function random.shuffle().
+    2. deal() - Removes the first-most card on the Cards list.
 
 ### 3. Hand
+  The Hand class represent the cards being held by a Player and a Dealer and the total points the cards are valued.
 
 ### 4. Player
 
@@ -49,3 +60,4 @@ This part will provide the details and visual representation of how the Program 
 ### 6. BlackjackGame
 
 ## 🌊The Flow🎞
+aaaaaaaa
