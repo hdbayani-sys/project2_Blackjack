@@ -37,9 +37,12 @@ This part will provide the details and visual representation of how the Program 
 ## 🗃The Classes🗃
 
 ### 1. Card
-  The Card class represents a single card with the following attributes:  
-    1. Suit - Spade, Club, Heart, or Diamond, 
-    2. Rank - Ranging to an Ace, number cards 2-10, Jacks, Queens, and Kings, 
+  The Card class represents a single card with the following attributes:
+  
+    1. Suit - Spade, Club, Heart, or Diamond,
+    
+    2. Rank - Ranging to an Ace, number cards 2-10, Jacks, Queens, and Kings,
+    
     3. Value - Numerical values from 1-11
     
 ### 2. Deck
