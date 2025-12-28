@@ -37,30 +37,64 @@ This part will provide the details and visual representation of how the Program 
 ## 🗃The Classes🗃
 
 ### 1. Card
-  The Card class represents a single card with the following attributes:
-  
+  - The Card class represents a single card with the following attributes:
     1. Suit - Spade, Club, Heart, or Diamond, 
     2. Rank - Ranging to an Ace, number cards 2-10, Jacks, Queens, and Kings,
     3. Value - Numerical values from 1-11
     
 ### 2. Deck
-  The Deck class represents the standard 52-deck of card objects that have the attributes from the Card class. It has the following attributes:
-    
-    1. cards - An empty list which is later filled by all possible playing cards using a loop.
+  - The Deck class represents the standard 52-deck of card objects that have the attributes from the Card class. It has the following attributes:
+    1. cards - An empty list which is later filled by all possible playing cards with their values using a loop.
   
-  Furthermore, it has the following methods:
-    
+  - Furthermore, it has the following methods:
     1. shuffle() - Shuffles the Cards list through a "random" function random.shuffle().
     2. deal() - Removes the first-most card on the Cards list.
 
 ### 3. Hand
-  The Hand class represent the cards being held by a Player and a Dealer and the total points the cards are valued.
+  - The Hand class represents the cards being held by a Player and a Dealer and the total points the cards are valued. It has the following attributes:
+    1. card - An empty list that stores the cards that either a player or the dealer has
+
+  - Furhtermore, it has the following methods:
+    1. total() - Stores the current total of the card list and handles the Ace point if it's either 11 points or 1. It sends back the current summation.
+    2. is_blackjack() - Checks if the current summation from total() is 21 AND the number of cards in the card list is 2. If so, it will send back True, otherwise, it will send back False.
+    3.  is_bust() - Similar in structure to is_blackjack(), it checks if the current summation from total() is 22 and above. If so, sends back True, otherwise, False.
 
 ### 4. Player
+  - The Player class represents a human player. It has the following attributes:
+    1. name - Player_x, where x is a number ranging from 1-7.
+    2. balance - All players start with 10000 which increase or decrease depending on the bet made and whether they wonor lost the round.
+    3. bet - The amount from the balance that the players will "pay" to play a round of Blackjack.
+    4. hand - Provides the player access to their own Hand class.
+
+  - Furthermore, it has the following methods:
+    1. place_bet() - Allows the player to place a bet and is stored in attribute bet. The input must be a number AND is less than or equal to the balance while being greater than zero.
+    2. hit(deck) - Gives a player a card from the deck and adds it to their hand.
+    3. stand() - Ends a players turn by giving the BlackjackGame the signal to end their turn.
 
 ### 5. Dealer
+  - The Dealer class represents a dealer controlled by the computer. It has the following attributes:
+    1. hand - Provides the dealer access to their own Hand class.
 
+  - Furthermore, it has the following methods:
+    1. play_turn() - Allows the dealer to draw a card if their current hand doesn't sum up to 17 or more and stops until the hand does sum up to 17 or more.
+    
 ### 6. BlackjackGame
+  - The Blackjackgame class is what's called the "main controller" since it is the that allows the subsequent classes to interact with one another to make a cohesive flow of a blackjack game. It has the following attrributes:
+    1. players = It's an empty list that will be filled by the players created by setup_players().
+    2. dealer - "Creates" the dealer by calling the Dealer class.
+    3. deck - Accesses the Deck class to create the card deck and give each card a Value.
+    4. round_number - A number representing how many rounds of blackjack have currently played.
+  
+  - Furthermore, it has the following methods:
+    1. start() - Contains all the subsequent methods and a shuffle method and organizes them to create the flow of a blackjack game
+    2. setup_players() - Asks how many players will join and creates that many players each having their own access to the Player class.
+    3. place_bets() - For each player currently playing, ask them how much they will bet.
+    4. initial_deal() - Gives each player 2 cards from the deck face up while giving the dealer a card facing upwards and a card facing downwards
+    5. run_player_turns() - Checks if any of the players have a blackjack hand and removes them from the list of active players. For each player actively playing, ask them to hit or stand. Remove the player from the list of active players if they either get 21 points, bust, or stand.
+    6. run_dealer_turn() - Reveals the faced down card and would either draw until they have 17 points or more, or stand if they already do.
+    7. resolve_round() - Ends the round by giving or taking the amount each player betted in their balance, depending on the outcome of the game.
+    8. eliminate_broke_players() - Players with 0 or if possible, negative balance, will be removed from the list of players eligible to play.
+    9. ask_continue() - For the remaining players, asks if they want to continue playing or quit early and "cash out". If they want to continue, they continue playing, else they are removed from the list of players eligible to play.
 
 ## 🌊The Flow🎞
 aaaaaaaa
