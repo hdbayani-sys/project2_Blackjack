@@ -9,7 +9,7 @@ Blackjack is my second software project to be submitted for EEE 111 under my ins
 - Great replayability as the game can handle an almost infinite amount rounds.
 - A dealer controlled by a computer that follows standard blackjack rules.
 - User friendly outputs that allow the player to see each output at their own pace as well as seeing who's turn it is, their current score, and their new balance when resolving rounds.
-- Randomized dialogue during betting, dealing, and in between rounds.
+- Randomized dialogue during betting and dealing.
 - Option for players to continue playing or to cash out early. Game ends if all players are eliminated by having insufficient balance or voluntarily quitting
 
 ## 🛠Process⚒
