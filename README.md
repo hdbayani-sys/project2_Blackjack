@@ -97,5 +97,14 @@ This part will provide the details and visual representation of how the Program 
     9. ask_continue() - For the remaining players, asks if they want to continue playing or quit early and "cash out". If they want to continue, they continue playing, else they are removed from the list of players eligible to play.
 
 ## 🌊The Flow🎞
-The following images below provide the flowchart of the blackjack game the program follows.
+The following images below provide the flowchart of the blackjack game the program follows:
 
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/1.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/2.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/3.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/4.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/5.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/6.png)
+![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/7.png)
+
+# ⚙️Setting up the program🐍
