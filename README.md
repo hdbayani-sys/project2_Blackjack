@@ -97,4 +97,5 @@ This part will provide the details and visual representation of how the Program 
     9. ask_continue() - For the remaining players, asks if they want to continue playing or quit early and "cash out". If they want to continue, they continue playing, else they are removed from the list of players eligible to play.
 
 ## 🌊The Flow🎞
-aaaaaaaa
+The following images below provide the flowchart of the blackjack game the program follows.
+
