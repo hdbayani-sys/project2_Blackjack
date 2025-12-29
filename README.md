@@ -108,3 +108,14 @@ The following images below provide the flowchart of the blackjack game the progr
 ![image alt](https://github.com/hdbayani-sys/project2_Blackjack/blob/31327c7cb0e1ff663d927ad97423a4f7179b96b7/Flowchart_Assets/7.png)
 
 # ⚙️Setting up the program🐍
+## Prerequisite
+- Make sure to have a laptop/desktop that has Visual Studio Code with Python version 3.13 for the best experience.
+
+## Setup
+1. Download all the files in the repository apart from the README.md and the Flow_Chart Assets folder
+2. Place the files on a single folder and make sure all are at the same directory.
+3. Open Visual Code and locate File on the top left.
+4. File -> Open File -> Find and select Main.py
+5. Run Python File by pressing the playbutton on the top right.
+6. You're now ready to not-so gamble!
+
